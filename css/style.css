@@ -26,61 +26,38 @@ header {
     padding: 2.78vw 4.92vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 90.14vw;
-}
-
-.header-conttext {
-    display: flex;
-    align-items: center;
-}
-
-.texthead {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-   
-}
-
-.menu {
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.39vw;
-    cursor: pointer;
-    text-decoration: none;
-    position: relative; 
-  }
-  
-
-  .menu::after {
-    content: ""; 
-    position: absolute; 
-    left: 0;
-    bottom: -2px; 
-    width: 100%;
-    height: 2px; 
-    background-color: transparent; 
-    transition: background-color 0.3s ease; 
-  }
-
-  .menu:hover::after {
-    background-color: #000; 
-  }
-
-
-  .menu:not(:last-of-type) {
-    margin-right: 3.89vw;
-  }
-
-
-
-  .texthead a{
-  text-decoration: none;
-  color: black;
+    justify-content: space-between; 
 }
 
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+nav {
+  margin-left: auto; 
+}
+
+nav ul li {
+  margin-right: 20px; 
+}
+
+nav ul li:last-child {
+  margin-right: 0; 
+}
+
+nav ul li a {
+  text-decoration: none; 
+  color: black; 
+  font-family: "Montserrat"; 
+  font-size: 18px; 
+  font-weight: 400; 
+  line-height: 1.39vw;
+}
 
   .button-header {
     font-family: "Montserrat";
@@ -91,6 +68,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    text-decoration: none;
   }
 
 
@@ -209,10 +187,13 @@ header {
 /* СТИЛІ ДО СЕКЦІЇ 2 */
 
 .sec2{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .text-sec2 {
@@ -255,8 +236,13 @@ padding-bottom: 50px;
   justify-content: center;
   margin: 0 auto; 
   padding-top: 50px;
+  background-color: #F1FDFF;
 }
 
+
+.art3{
+padding-top: 50px;
+}
 
 .img-sec3 img{
   flex: 0 0 50%; 
@@ -294,7 +280,6 @@ padding-bottom: 50px;
   background-color: rgba(122, 229, 253, 1);
   border-radius: 2.78vw;
   padding: 1.04vw 1.74vw;
-  display: inline-block;
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 1.28vw;
@@ -306,6 +291,9 @@ padding-bottom: 50px;
   box-shadow: 0.28vw 0.44vw 0.67vw rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
   margin-top: 50px;
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
 }
 
 .button3:hover{
@@ -385,12 +373,21 @@ margin-top: -215px;
 
  /* СТИЛІ ДО СЕКЦІЇ 5 */
 
- 
+ .sec5{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Вирівнюємо по горизонталі */
+  align-items: center; /* Вирівнюємо по вертикалі */
+  text-align: center; /* Вирівнюємо текст по центру */
+}
+
  .text-sec5 {
   text-align: center;
   padding: 0px 71px 160px 71px;
   font-family: "Montserrat";
   width: 1200px;
+  
   }
 
 
@@ -602,6 +599,11 @@ margin-top: -215px;
   cursor: pointer;
   box-shadow: 0.28vw 0.44vw 0.67vw rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+}
+
+.button2 a{
+text-decoration: none;
+color: #000;
 }
 
 .button2:hover {
